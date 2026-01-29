@@ -4,13 +4,12 @@ import std/os, std/tables, std/strutils
 # setup
 var commands = initTable[string, proc(args: seq[string])]()
 
-# core commands
+# core library
 import lib/core/echo; commands["echo"] = echo.echo
 import lib/core/go; commands["go"] = go.go
 import lib/core/exit; commands["exit"] = exit.exit
 
 #---------------------------------------------- 
-
 
 
 
