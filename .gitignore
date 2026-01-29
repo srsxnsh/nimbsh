@@ -1,0 +1,8 @@
+# Nim compiled outputs
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
