@@ -1,0 +1,44 @@
+CORE
+
+/ exit
+/ md
+/ m
+/ go
+/ echo
+/ r 
+
+
+
+
+EXTRA
+
+spam
+nmbsh
+
+FILES
+
+out
+rl
+
+fa
+fw
+fl
+fi
+
+NETWORK
+
+ping
+ip
+
+SYSTEM
+
+who
+up
+
+info
+
+mem
+cpu
+disk
+
+
