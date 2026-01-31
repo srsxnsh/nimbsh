@@ -9,13 +9,13 @@ proc r*(args: seq[string]) =
   if fileExists(path):
 
     if path == "/" or path == "/dev":
-      stdout.write("Are you sure you want to remove that bro? [yes]")
+      stdout.write("Are you sure you want to remove that bro? [yes] ")
       if not (stdin.readLine().strip == "yes"):
         echo "Aborted."
         return
 
 
     removeFile(path)
-    echo "Removed", path
+    echo "Removed ", path
   else:
     echo "Cant find that one"
