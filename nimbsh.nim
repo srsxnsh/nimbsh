@@ -21,8 +21,10 @@ import lib/extra/spam; commands["spam"] = spam.spam
 import lib/files/rf; commands["rf"] = rf.rf
 import lib/files/fw; commands["fw"] = fw.fw
 
+# system library
+import lib/system/who; commands["who"] = who.who
+import lib/system/up; commands["up"] = up.up
 
-#---------------------------------------------- 
 echo ""
 echo "nmbsh v0.0.0"
 var pointer : string = " »» "
