@@ -17,6 +17,7 @@ import lib/core/l; commands["l"] = l.l
 
 # files library
 import lib/files/rf; commands["rf"] = rf.rf
+import lib/files/fw; commands["fw"] = fw.fw
 
 
 #---------------------------------------------- 
