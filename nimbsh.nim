@@ -11,10 +11,12 @@ import lib/core/exit; commands["exit"] = exit.exit
 import lib/core/m; commands["m"] = m.m
 import lib/core/r; commands["r"] = r.r
 import lib/core/md; commands["md"] = md.md
+import lib/core/l; commands["l"] = l.l
 
 # extra library
 
 # files library
+import lib/files/rf; commands["rf"] = rf.rf
 
 
 #---------------------------------------------- 
