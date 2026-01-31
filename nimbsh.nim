@@ -14,6 +14,8 @@ import lib/core/md; commands["md"] = md.md
 import lib/core/l; commands["l"] = l.l
 
 # extra library
+import lib/extra/nimbsh; commands["nimbsh"] = nimbsh.nimbsh
+import lib/extra/spam; commands["spam"] = spam.spam
 
 # files library
 import lib/files/rf; commands["rf"] = rf.rf
