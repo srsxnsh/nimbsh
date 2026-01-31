@@ -6,22 +6,22 @@ CORE
 / go
 / echo
 / r 
-
+/ l
 
 
 
 EXTRA
 
-spam
-nmbsh
+/ spam
+/ nmbsh
 
 FILES
 
-out
+/ rf
 rl
 
 fa
-fw
+/ fw
 fl
 fi
 
