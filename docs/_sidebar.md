@@ -1,7 +1,15 @@
-* **Nimbsh**
+* **Home**
 * [Home](/)
+* [Installation](install)
+* [Usage](usage)
 * **Modules**
-* > [Core](modules/core)
-* > [Files](modules/files.md)
-* > [System](modules/system.md)
-* > [Extra](modules/extra.md)
+* [Core](modules/core)
+* [Files](modules/files.md)
+* [System](modules/system.md)
+* [Extra](modules/extra.md)
+
+
+<br /><br />
+
+[Github](https://github.com/srsxnsh.nimbsh)
+[Help + Contact](help)
