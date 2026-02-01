@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo_transparent.png" height=200>
+  <img src="assets/logo_transparent.svg" height=200>
 </p>
 <hr />
 <div align="center">
