@@ -1,10 +1,11 @@
 import terminal
 
 proc spam*(args: seq[string]) {.exportc.} =
-  
-  var spammer : string = "nimbsh!!!"
-  if not args.len == 0:
+
+  var spammer : string = "yo"
+  if args.len != 0:
     spammer = args[0]
+  else: spammer = "nimbsh!!!"
 
   while true:
     echo spammer
