@@ -27,7 +27,7 @@ import lib/system/up; commands["up"] = up.up
 import lib/system/whatos; commands["whatos"] = whatos.whatos
 
 echo ""
-echo "nmbsh v0.0.0"
+echo "nimbsh v0.0.0"
 var pointer : string = " »» "
 
 #---------------------------------------------MAIN LOOP
