@@ -32,12 +32,12 @@ ip
 
 SYSTEM
 
-who
-up
+/ who
+/ up
+/ whatos
 
 info
 
-mem
 cpu
 disk
 

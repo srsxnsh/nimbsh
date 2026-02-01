@@ -24,6 +24,7 @@ import lib/files/fw; commands["fw"] = fw.fw
 # system library
 import lib/system/who; commands["who"] = who.who
 import lib/system/up; commands["up"] = up.up
+import lib/system/whatos; commands["whatos"] = whatos.whatos
 
 echo ""
 echo "nmbsh v0.0.0"

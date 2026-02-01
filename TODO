@@ -1,3 +1,9 @@
 -/- very basic parsing and input functionality
---- libraries
+-/- libraries
+
+--- DOCUMENTATION
+
+--- proper string parsing
+
+--- better more modular imports + 
 --- config with toggleable libs
