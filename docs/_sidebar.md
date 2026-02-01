@@ -11,5 +11,6 @@
 
 <br /><br />
 
-[Github](https://github.com/srsxnsh.nimbsh)
+[Github](https://github.com/srsxnsh/nimbsh)
 [Help + Contact](help)
+[Check out Nim](https://nim-lang.org)
