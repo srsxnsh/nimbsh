@@ -1,5 +1,5 @@
 * **Home**
-* [Home](/)
+* [Nimbsh](/)
 * [Installation](install)
 * [Usage](usage)
 * **Modules**
