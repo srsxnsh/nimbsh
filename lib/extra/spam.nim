@@ -1,5 +1,3 @@
-import terminal
-
 proc spam*(args: seq[string]) {.exportc.} =
 
   var spammer : string = "yo"
