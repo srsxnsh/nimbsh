@@ -52,6 +52,7 @@ while true:
 
   # parse
   let tokens = tokenize(line)
+  if tokens.len == 0: continue
   let cmd = tokens[0].value
 
   let args = if tokens.len > 1: 

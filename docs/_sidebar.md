@@ -6,6 +6,8 @@
 * [Core](modules/core)
 * [Extra](modules/extra.md)
 * **Extra Syntax**
+* [Comments](extras/comments)
+* [Enjambment](extras/runons)
 * [Pipes](extras/pipes)
 * [Strings and Concatenation](extras/strings)
 * **Nimbsh as a language**
