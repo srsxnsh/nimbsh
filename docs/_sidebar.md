@@ -4,10 +4,14 @@
 * [Usage](usage)
 * **Modules**
 * [Core](modules/core)
-* [Files](modules/files.md)
-* [System](modules/system.md)
 * [Extra](modules/extra.md)
-
+* **Extra Syntax**
+* [Pipes](extras/pipes)
+* [Strings and Concatenation](extras/strings)
+* **Nimbsh as a language**
+* [Variables](scripting/variables)
+* [Control Flow](scripting/control-flow)
+* [Extensibility and exec](scripting/exec)
 
 <br /><br />
 
