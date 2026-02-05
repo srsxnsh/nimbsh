@@ -1,9 +1,14 @@
 -/- very basic parsing and input functionality
--/- libraries
 
---- DOCUMENTATION
+-/- DOCUMENTATION
 
---- proper string parsing
+--- proper tokenizer parsing
+--- strings and concat
+--- escapes with backslash
+--- comments
+--- multiline input
 
---- better more modular imports + 
---- config with toggleable libs
+--- pipes
+
+--- variables
+--- scripting (lowkirkenuinely final boss)
