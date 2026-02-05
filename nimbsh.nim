@@ -47,20 +47,35 @@ var pointer : string = " »» "
 while true:
   echo ""
   stdout.write(getCurrentDir() & pointer)
-  let line = stdin.readLine().strip
-  if line.len == 0: continue
+  
 
-  # parse
+  var line = ""
+  var continuation = false
+  while true:
+    if continuation:
+      stdout.write("> ") 
+    let inputLine = stdin.readLine()
+    
+    if inputLine.endsWith("\\"):
+      line.add inputLine[0..^2]  
+      line.add " " 
+      continuation = true
+    else:
+      line.add inputLine
+      break
+  
+  line = line.strip
+  if line.len == 0: continue
+  
+  # parse tokenizer
   let tokens = tokenize(line)
   if tokens.len == 0: continue
+  
   let cmd = tokens[0].value
-
   let args = if tokens.len > 1: 
     tokens[1..^1].mapIt(it.value) else: @[]
-
   
   if commands.hasKey(cmd):
     commands[cmd](args)
   else:
     execcmd(cmd, args)
-

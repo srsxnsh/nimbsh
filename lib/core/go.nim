@@ -1,4 +1,4 @@
-import std/strutils, std/os
+import std/os
 
 proc go*(args: seq[string]) {.exportc.} =
   if args.len == 0:

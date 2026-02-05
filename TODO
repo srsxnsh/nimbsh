@@ -4,9 +4,9 @@
 
 -/- proper tokenizer parsing
 -/- strings and concat
---- escapes with backslash
+-/- escapes with backslash
 -/- comments
---- multiline input
+-/- multiline input
 
 --- pipes
 
