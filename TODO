@@ -2,10 +2,10 @@
 
 -/- DOCUMENTATION
 
---- proper tokenizer parsing
---- strings and concat
+-/- proper tokenizer parsing
+-/- strings and concat
 --- escapes with backslash
---- comments
+-/- comments
 --- multiline input
 
 --- pipes

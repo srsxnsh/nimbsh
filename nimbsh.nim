@@ -1,4 +1,4 @@
-import std/os, std/tables, std/strutils, std/posix
+import std/os, std/tables, std/strutils, std/posix, std/sequtils
 
 #-------------------------------------------exec and tokenize
 proc execcmd(cmd: string, args: seq[string]) =
@@ -17,9 +17,9 @@ proc execcmd(cmd: string, args: seq[string]) =
     var status: cint
     discard waitpid(pid, status, 0)
 
+from utils/tokenizer import Token, tokenize, TokenKind
 
-proc tokenize(line: string): seq[string] =
-  line.splitWhitespace()
+
 
 
 
@@ -52,8 +52,10 @@ while true:
 
   # parse
   let tokens = tokenize(line)
-  let cmd = tokens[0]
-  let args = if tokens.len > 1: tokens[1..^1] else: @[]
+  let cmd = tokens[0].value
+
+  let args = if tokens.len > 1: 
+    tokens[1..^1].mapIt(it.value) else: @[]
 
   
   if commands.hasKey(cmd):
