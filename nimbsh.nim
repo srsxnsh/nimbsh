@@ -1,32 +1,18 @@
 import std/os, std/tables, std/strutils, std/posix, std/sequtils
 
-#-------------------------------------------exec and tokenize
-proc execcmd(cmd: string, args: seq[string]) =
-  let pid = fork()
+# a coupla tables 
 
-  if pid == 0:
-    
-    let argv = allocCStringArray(@[cmd] & args)
-    discard execvp(cmd.cstring, argv)
+var shellVars = initTable[string, string]()
+var commands = initTable[string, proc(args: seq[string])]()
 
-    
-    stderr.writeLine("command not found: " & cmd)
-    quit(127)
-  else:
-    
-    var status: cint
-    discard waitpid(pid, status, 0)
+#-------------------------------------------IMPORT UTILITIES
 
+from utils/execcmd import execcmd
 from utils/tokenizer import Token, tokenize, TokenKind
 from utils/execpipe import execpipe
+from utils/vars import isAssignment, parseAssignment, expand
 
-
-
-
-
-#-----------------------------------IMPORTING COMMANDS 
-# setup
-var commands = initTable[string, proc(args: seq[string])]()
+#-----------------------------------IMPORT COMMANDS 
 
 # core library
 import lib/core/echo; commands["echo"] = echo.echo
@@ -37,8 +23,9 @@ import lib/core/exit; commands["exit"] = exit.exit
 import lib/extra/nimbsh; commands["nimbsh"] = nimbsh.nimbsh
 import lib/extra/spam; commands["spam"] = spam.spam
 
-# process library
+# process library - coming soon ig? with like, bging and fging procs 
 
+#----------------------------------------------STARTUP STUFF
 
 echo ""
 echo "nimbsh v0.0.0"
@@ -71,9 +58,22 @@ while true:
   # parse tokenizer
   let tokens = tokenize(line)
   if tokens.len == 0: continue
+
+  if isAssignment(tokens):
+    let (varName, varValue) = parseAssignment(tokens)
+    if varName.len > 0:
+      # Expand variables in the value before storing
+      shellVars[varName] = expand(varValue, shellVars)
+    continue
+  
+  # expand all variables in the tokens 
+  var expandedTokens = tokens
+  for i in 0..<expandedTokens.len:
+    expandedTokens[i].value = expand(expandedTokens[i].value, shellVars)
+
   
   var commands_seq: seq[seq[Token]] = @[@[]]
-  for token in tokens:
+  for token in expandedTokens:
     if token.kind == tkPipe:
       commands_seq.add(@[])
     else:

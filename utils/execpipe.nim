@@ -1,4 +1,4 @@
-import std/os, std/posix, std/tables, std/strutils, std/sequtils
+import std/posix, std/tables, std/sequtils
 from ./tokenizer import Token, tokenize, TokenKind
 
 proc execpipe*(cmdSeq: seq[seq[Token]], builtins: Table[string, proc(args: seq[string])]) =
