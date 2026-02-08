@@ -28,7 +28,7 @@ import lib/extra/spam; commands["spam"] = spam.spam
 #----------------------------------------------STARTUP STUFF
 
 echo ""
-echo "nimbsh v0.0.0"
+echo "nimbsh v1.0.0"
 var pointer : string = " »» "
 
 #---------------------------------------------MAIN LOOP

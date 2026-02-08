@@ -1,7 +1,6 @@
 * **Home**
 * [Nimbsh](/)
 * [Installation](install)
-* [Usage](usage)
 * **Builtin Modules**
 * [Core](modules/core)
 * [Extra](modules/extra.md)
