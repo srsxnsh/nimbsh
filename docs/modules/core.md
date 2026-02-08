@@ -24,4 +24,7 @@ The `go` command can be used to change the current working directory.
 
 The `exit` command is used to exit the shell.
 
-
+```
+> exit
+toodles.
+```
