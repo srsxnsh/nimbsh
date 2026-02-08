@@ -15,7 +15,7 @@ ___________
 
 ## Quick Install
 
-To quickly start using nimbshm, build it from the AUR (dedicated installer coming soon):
+To quickly start using nimbsh, build it from the AUR (dedicated installer coming soon):
 
 ```
 yay -S nimbsh
