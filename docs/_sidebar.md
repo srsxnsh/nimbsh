@@ -2,18 +2,14 @@
 * [Nimbsh](/)
 * [Installation](install)
 * [Usage](usage)
-* **Modules**
+* **Builtin Modules**
 * [Core](modules/core)
 * [Extra](modules/extra.md)
 * **Extra Syntax**
 * [Comments](extras/comments)
 * [Enjambment](extras/runons)
 * [Pipes](extras/pipes)
-* [Strings and Concatenation](extras/strings)
-* **Nimbsh as a language**
-* [Variables](scripting/variables)
-* [Control Flow](scripting/control-flow)
-* [Extensibility and exec](scripting/exec)
+* [Variables](extras/variables)
 
 <br /><br />
 
