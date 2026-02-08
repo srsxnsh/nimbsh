@@ -20,6 +20,8 @@ To quickly start using nimbsh, build it from the AUR (dedicated installer coming
 ```
 yay -S nimbsh
 ```
+If you're not on Arch, you can compile the shell very easily from source. There are instructions on the `install` page of the docs.
+
 
 Then run `nimbsh` to enter the shell.
 
