@@ -1,6 +1,6 @@
 # Variables in nimbsh.
 
-## Assignment and Expansion
+## Assignment and Expansion:
 
 In nimbsh, a shell variable can be assigned with the simple command `var_name=value`.
 
