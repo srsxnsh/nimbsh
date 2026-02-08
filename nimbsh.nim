@@ -18,6 +18,7 @@ proc execcmd(cmd: string, args: seq[string]) =
     discard waitpid(pid, status, 0)
 
 from utils/tokenizer import Token, tokenize, TokenKind
+from utils/execpipe import execpipe
 
 
 
@@ -71,11 +72,28 @@ while true:
   let tokens = tokenize(line)
   if tokens.len == 0: continue
   
-  let cmd = tokens[0].value
-  let args = if tokens.len > 1: 
-    tokens[1..^1].mapIt(it.value) else: @[]
+  var commands_seq: seq[seq[Token]] = @[@[]]
+  for token in tokens:
+    if token.kind == tkPipe:
+      commands_seq.add(@[])
+    else:
+      commands_seq[^1].add(token)
   
-  if commands.hasKey(cmd):
-    commands[cmd](args)
+  # no more empties that break pipes grr 
+  commands_seq = commands_seq.filterIt(it.len > 0)
+  
+  if commands_seq.len == 0: continue
+  
+  # nuh uh zero pipes to be seen here
+  if commands_seq.len == 1:
+    let cmd = commands_seq[0][0].value
+    let args = if commands_seq[0].len > 1: 
+      commands_seq[0][1..^1].mapIt(it.value) else: @[]
+    
+    if commands.hasKey(cmd):
+      commands[cmd](args)
+    else:
+      execcmd(cmd, args)
   else:
-    execcmd(cmd, args)
+    # ah fuck there are pipes
+    execpipe(commands_seq, commands)
