@@ -8,7 +8,9 @@
 -/- comments
 -/- multiline input
 
---- pipes
+-/- pipes
 
---- variables
---- scripting (lowkirkenuinely final boss)
+-/- variables
+--- scripting
+
+--- fallback calculator! sounds fun enough  (might have to make a seperate tokenizer)
