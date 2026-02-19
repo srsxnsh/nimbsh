@@ -13,7 +13,7 @@ cat << "EOF"
 
 EOF
 
-INSTALL_BRANCH="dev"
+INSTALL_BRANCH="main"
 INSTALL_DIR="/$HOME/.nimbsh"
 
 if [ -d "$INSTALL_DIR" ]; then

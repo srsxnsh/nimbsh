@@ -2,7 +2,7 @@
 
 set -e
 
-INSTALL_BRANCH="dev"
+INSTALL_BRANCH="main"
 
 echo "Oh-My-Nimbsh : Installing..."
 
