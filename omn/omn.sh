@@ -14,7 +14,7 @@ cat << "EOF"
 EOF
 
 INSTALL_BRANCH="dev"
-INSTALL_DIR="home/$USER/.nimbsh"
+INSTALL_DIR="/$HOME/.nimbsh"
 
 if [ -d "$INSTALL_DIR" ]; then
 	echo "[ $INSTALL_DIR ] found in the system."
