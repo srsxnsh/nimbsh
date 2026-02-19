@@ -5,7 +5,7 @@ ___________
 
 ## A simple shell written in Nim.
 
-Nimbsh is a simple OS shell written for UNIX or GNU based operating systems.
+Nimbsh is a simple OS shell written for UNIX or GNU/Linux based operating systems.
 
 The entire main shell was built in Nim, with all documentation being written in Markdown and shipped using the Docsify framework.
 
@@ -15,14 +15,16 @@ ___________
 
 ## Quick Install
 
-To quickly start using nimbsh, build it from the AUR (dedicated installer coming soon):
+To quickly start using nimbsh, use the `omn` installer (AUR and source compilation instructions also available, `nixpkgs` package coming in the next version):
 
 ```
-yay -S nimbsh
+curl -fsSL https://nimbsh.srsxnsh.xyz/omn/install-omn.sh | bash
 ```
-If you're not on Arch, you can compile the shell very easily from source. There are instructions on the `install` page of the docs.
 
+This installer does not work on Nixos due to using `/usr/bin`. A dedicated `nixpkgs` port is on it's way. Nimbsh is registered as `nimbsh` on the AUR.
 
-Then run `nimbsh` to enter the shell.
+Then run `omn` to update or install nimbsh.
+
+Run `nimbsh` to enter the shell.
 
 Full build instructions and other more advanced options can all be found in the [docs](https://nimbsh.srsxnsh.xyz/#/install).
