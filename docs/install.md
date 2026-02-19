@@ -7,7 +7,7 @@ This page contains full details for installing nimbsh, both quickly, and buildin
 Use the `omn` (oh-my-nimbsh) installer to install `omn`:
 
 ```
-curl -fsSL https://nimbsh.srsxnsh.xyz/omn/install-omn.sh | bash
+curl -fsSL https://raw.githubusercontent.com/srsxnsh/nimbsh/refs/heads/main/omn/omn-install.sh | bash
 ```
 
 Then run `omn` to install or update nimbsh.
