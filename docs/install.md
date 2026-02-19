@@ -2,6 +2,21 @@
 
 This page contains full details for installing nimbsh, both quickly, and building from source.
 
+## `omn`:
+
+Use the `omn` (oh-my-nimbsh) installer to install `omn`:
+
+```
+curl -fsSL https://raw.githubusercontent.com/srsxnsh/nimbsh/refs/heads/main/omn/omn-install.sh | bash
+```
+
+Then run `omn` to install or update nimbsh.
+
+## Nix/Nixos (`nixpkgs`):
+
+Coming soon.
+
+
 ## Arch Linux (AUR):
 
 Nimbsh is available on the AUR!
@@ -54,6 +69,7 @@ git pull
 
 nim c nimbsh.nim
 ```
+
 
 ## Starting the shell:
 
