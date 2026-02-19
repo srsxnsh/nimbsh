@@ -16,7 +16,7 @@ from utils/vars import isAssignment, parseAssignment, expand
 
 # core library
 import lib/core/echo; commands["echo"] = echo.echo
-import lib/core/go; commands["go"] = go.go
+import lib/core/go; commands["cd"] = go.go
 import lib/core/exit; commands["exit"] = exit.exit
 
 # extra library
