@@ -3,7 +3,7 @@ ___________
 [![AUR version](https://img.shields.io/aur/version/nimbsh)](https://aur.archlinux.org/packages/nimbsh) 
 
 
-## A simple shell written in Nim.
+## A Simple Shell Written in Nim.
 
 Nimbsh is a simple OS shell written for UNIX or GNU/Linux based operating systems.
 
