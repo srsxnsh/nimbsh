@@ -12,12 +12,12 @@ The `echo` command is used to output text to the console.
 Hello, nimbsh.
 ```
 
-## `go`
+## `cd`
 
-The `go` command can be used to change the current working directory.
+The `cd` (change dir) command can be used to change the current working directory.
 
 ```
-> go new/path
+> cd new/path
 ```
 
 ## `exit`
