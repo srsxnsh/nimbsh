@@ -18,10 +18,12 @@ ___________
 To quickly start using nimbsh, use the `omn` installer (AUR and source compilation instructions also available, `nixpkgs` package coming in the next version):
 
 ```
-curl -fsSL https://raw.githubusercontent.com/srsxnsh/nimbsh/refs/heads/main/omn/omn-install.sh | bash
+curl -fsSL omn.srsxnsh.xyz/install  | bash
 ```
 
-This installer does not work on Nixos due to using `/usr/bin`. A dedicated `nixpkgs` port is on it's way. Nimbsh is registered as `nimbsh` on the AUR.
+(You will not be able to run the installed program on Nixos due to using `/usr/bin`, you can run the file direct with bash instead, and run the shell with `/usr/bin/nimbsh`)
+
+A dedicated `nixpkgs` port is on it's way. Nimbsh is registered as `nimbsh` on the AUR.
 
 Then run `omn` to update or install nimbsh.
 
