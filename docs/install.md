@@ -2,12 +2,12 @@
 
 This page contains full details for installing nimbsh, both quickly, and building from source.
 
-## `omn`:
+## Oh-My-Nimbsh:
 
 Use the `omn` (oh-my-nimbsh) installer to install `omn`:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/srsxnsh/nimbsh/refs/heads/main/omn/omn-install.sh | bash
+curl -fsSL https://omn.srsxnsh.xyz/install | bash
 ```
 
 Then run `omn` to install or update nimbsh.
@@ -71,7 +71,7 @@ nim c nimbsh.nim
 ```
 
 
-## Starting the shell:
+# Starting the shell:
 
 ```
 nimbsh
